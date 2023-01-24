@@ -1,0 +1,39 @@
+package com.ojas.otrial;
+
+import java.text.DateFormat;
+import java.text.ParseException;
+import java.text.SimpleDateFormat;
+import java.time.LocalDateTime;
+import java.time.format.DateTimeFormatter;
+import java.util.Calendar;
+import java.util.Date;
+
+import org.springframework.boot.SpringApplication;
+import org.springframework.boot.autoconfigure.SpringBootApplication;
+
+@SpringBootApplication
+public class OTrialApplication {
+
+	public static void main(String[] args) throws ParseException {
+		SpringApplication.run(OTrialApplication.class, args);
+
+		DateTimeFormatter dtf = DateTimeFormatter.ofPattern("MMddyyyy");
+		LocalDateTime now = LocalDateTime.now();
+		System.out.println(dtf.format(now));
+
+		String s1 = "MMddyyyy";
+		String[] words = s1.split("y");
+
+		StringBuilder sb = new StringBuilder(s1);
+
+		System.out.println(sb);
+
+		for (String w : words) {
+			
+			System.out.println(w);
+
+		}
+
+	}
+
+}

@@ -1,0 +1,23 @@
+package com.ojas.AttendenceTrackerSystem.model;
+
+import jakarta.persistence.Entity;
+import jakarta.persistence.GeneratedValue;
+import jakarta.persistence.Id;
+import jakarta.persistence.Table;
+import lombok.Data;
+
+@Table
+@Entity
+@Data
+public class Employees {
+
+	@Id
+	@GeneratedValue
+	private int employeeId;
+	private String employeeName;
+	private String projectName;
+	private String workingHours;
+	private String projectDescrption;
+	private String Date;
+	
+}

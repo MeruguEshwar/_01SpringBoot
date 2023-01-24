@@ -1,0 +1,5 @@
+package com.ojas.mvc.Entity;
+
+public class ProductEntity {
+
+}

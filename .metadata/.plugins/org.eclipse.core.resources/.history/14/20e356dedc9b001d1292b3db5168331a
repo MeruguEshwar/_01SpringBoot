@@ -1,0 +1,9 @@
+package com.ojas.mvc;
+
+public class Product {
+
+	private int productId;
+	private String productName;
+	private double productPrice;
+	private double productQuantity;
+}
